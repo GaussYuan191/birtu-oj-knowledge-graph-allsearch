@@ -1,21 +1,18 @@
 package com.birtu.oj.allsearch.nai.io;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 将节点的数据写入到自定义词典中
- * @author: Gauss
- * @date: 2020-07-26 13:43
- **/
-
+ * 操作节点与词典
+ *
+ * 将节点的数据写入到自定义词典中
+ * @Author: 994
+ * @Date: 2020-03-10 19:43
+ */
 public class ToDictionaryIO<V> {
     //1.题目名称    2.算法名字
 
@@ -40,7 +37,7 @@ public class ToDictionaryIO<V> {
      *
      * 如果该流在打开文件进行输出前，目标文件不存在，那么该流会创建该文件。
      */
-    public void outFile(Collection<String> f, String path) throws IOException {
+    public void outFile(Collection<String> f,String path) throws IOException {
         Iterator<String> iterator = f.iterator();
         File file = new File(path);
 
@@ -61,4 +58,3 @@ public class ToDictionaryIO<V> {
 
 
 }
-

@@ -1,12 +1,9 @@
 package com.birtu.oj.allsearch.nai.comom;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 对应难度
- * @author: Gauss
- * @date: 2020-07-26 13:25
- **/
-
+ * @Author: 994
+ * @Date: 2020-03-04 22:59
+ */
 public enum DiffcultyComom {
     /**
      * 对应洛谷的难度
@@ -17,7 +14,7 @@ public enum DiffcultyComom {
     universal_high(4,"普及+/提高"),
     improve_low(5,"提高+/省选-"),
     imporve_normal(6,"省选/NOI-"),
-    imporve_high(7,"NOI/NOI+/CTSC")
+    imporve_high(7,"NOI/NOI+0/CTSC")
 
     ;
 

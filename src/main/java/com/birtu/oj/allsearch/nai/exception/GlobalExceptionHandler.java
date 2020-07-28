@@ -1,4 +1,4 @@
-package com.birtu.oj.allsearch.nai.exception;
+package com.birtu.oj.allsearch.nai.Exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
@@ -11,13 +11,12 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-/**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 全局捕获rest controller抛出的异常。
- * @author: Gauss
- * @date: 2020-07-26 13:40
- **/
 
+/**
+ * 全局捕获rest controller抛出的异常。
+ *
+ * @author zzh
+ */
 @ControllerAdvice
 @Slf4j
 public class GlobalExceptionHandler {
@@ -100,4 +99,3 @@ public class GlobalExceptionHandler {
     }
 
 }
-

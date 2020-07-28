@@ -3,15 +3,13 @@ package com.birtu.oj.allsearch.nai.io;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 将 answer 节点数据保存到文件中
- * @author: Gauss
- * @date: 2020-07-26 13:42
- **/
-
+ * 将 answer 节点数据保存到文件中
+ * @Author: 994
+ * @Date: 2020-05-01 15:49
+ */
 public class AnswerIO {
-    @Autowired
 
+    @Autowired
     public void input(){
 
     }

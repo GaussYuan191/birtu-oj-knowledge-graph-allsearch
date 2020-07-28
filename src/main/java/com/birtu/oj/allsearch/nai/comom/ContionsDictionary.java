@@ -1,11 +1,10 @@
 package com.birtu.oj.allsearch.nai.comom;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 存储条件标签类型的词典
- * @author: Gauss
- * @date: 2020-07-26 13:24
- **/
+ * 存储条件标签类型的词典
+ * @Author: 994
+ * @Date: 2020-03-06 22:17
+ */
 public final class ContionsDictionary {
 
     /**

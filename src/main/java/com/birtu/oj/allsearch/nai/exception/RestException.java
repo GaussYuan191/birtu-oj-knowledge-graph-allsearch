@@ -1,16 +1,15 @@
-package com.birtu.oj.allsearch.nai.exception;
+package com.birtu.oj.allsearch.nai.Exception;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.http.HttpStatus;
 
-/**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 返回rest格式的异常定义。
- * @author: Gauss
- * @date: 2020-07-26 13:41
- **/
 
+/**
+ * 返回rest格式的异常定义。
+ *
+ * @author jinlei on 2017/4/18.
+ */
 @Data
 @EqualsAndHashCode(callSuper = false)
 public class RestException extends RuntimeException {

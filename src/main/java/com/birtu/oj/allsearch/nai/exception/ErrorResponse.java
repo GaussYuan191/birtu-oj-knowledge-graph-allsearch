@@ -1,14 +1,11 @@
-package com.birtu.oj.allsearch.nai.exception;
+package com.birtu.oj.allsearch.nai.Exception;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 错误回复处理，Rest错误回复的定义
- * @author: Gauss
- * @date: 2020-07-26 13:38
- **/
-
+ * Rest错误回复的定义
+ * @author z994
+ */
 public class ErrorResponse {
 
     @JsonProperty(value = "code")
@@ -55,4 +52,3 @@ public class ErrorResponse {
                 '}';
     }
 }
-

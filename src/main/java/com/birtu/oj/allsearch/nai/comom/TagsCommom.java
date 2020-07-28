@@ -1,12 +1,9 @@
 package com.birtu.oj.allsearch.nai.comom;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 处理标签
- * @author: Gauss
- * @date: 2020-07-26 13:28
- **/
-
+ * @Author: 994
+ * @Date: 2020-04-26 15:08
+ */
 public class TagsCommom {
 
     public static final String TK = "题库";
@@ -27,4 +24,3 @@ public class TagsCommom {
 
 
 }
-

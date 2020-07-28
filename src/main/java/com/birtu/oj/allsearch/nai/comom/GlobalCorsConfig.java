@@ -6,13 +6,6 @@ import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-/**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description:  处理信息
- * @author: Gauss
- * @date: 2020-07-26 13:27
- **/
-
 @Configuration
 public class GlobalCorsConfig {
     @Bean
@@ -34,4 +27,3 @@ public class GlobalCorsConfig {
         return new CorsFilter(corsConfigurationSource);
     }
 }
-

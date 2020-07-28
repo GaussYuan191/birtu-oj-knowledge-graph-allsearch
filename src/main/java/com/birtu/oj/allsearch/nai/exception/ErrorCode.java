@@ -1,11 +1,4 @@
-package com.birtu.oj.allsearch.nai.exception;
-
-/**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 错误代码说明
- * @author: Gauss
- * @date: 2020-07-26 13:36
- **/
+package com.birtu.oj.allsearch.nai.Exception;
 
 import lombok.Getter;
 import lombok.ToString;
@@ -14,8 +7,8 @@ import org.springframework.http.HttpStatus;
 /**
  * 客户端请求返回的错误码定义。此处系统事先定义的统一错误。
  * reasonCode三位数字是1000-9999之间，本处事先定义的错误在100-499之间。在validator自定义的错误，在500-999之间。
+ * @author z994
  */
-
 @ToString
 public enum ErrorCode {
     /** 错误码及提示 */
@@ -57,4 +50,3 @@ public enum ErrorCode {
         this.reasonPhrase = reasonPhrase;
     }
 }
-

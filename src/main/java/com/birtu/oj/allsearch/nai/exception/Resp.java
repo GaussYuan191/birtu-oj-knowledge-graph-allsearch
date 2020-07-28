@@ -1,16 +1,13 @@
-package com.birtu.oj.allsearch.nai.exception;
-
+package com.birtu.oj.allsearch.nai.Exception;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.http.HttpStatus;
 
 /**
- * @program: birtu-oj-knowledge-graph-allsearch
- * @description: 返回数据格式
- * @author: Gauss
- * @date: 2020-07-26 13:41
- **/
-
+ * 返回数据格式
+ * @Author: 994
+ * @Date: 2020-03-08 14:45
+ */
 @Data
 public class Resp {
 
@@ -71,4 +68,3 @@ public class Resp {
     }
 
 }
-
