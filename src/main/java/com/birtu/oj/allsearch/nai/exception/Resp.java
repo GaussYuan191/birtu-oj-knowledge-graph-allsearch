@@ -35,11 +35,15 @@ public class Resp {
     @JsonProperty(value = "status")
     private HttpStatus httpStatus;
 
+    @JsonProperty(value = "text")
+    private String text;
+
     public Resp(int code,String message){
         this.code = code;
         this.message = message;
         this.data = null;
         this.httpStatus = ErrorCode.SUCCESS.getHttpStatus();
+        this.text = null;
     }
 
     public Resp(ErrorCode errorCode, Object data){
@@ -47,6 +51,7 @@ public class Resp {
         this.message = errorCode.getReasonPhrase();
         this.httpStatus = errorCode.getHttpStatus();
         this.data = data;
+        this.text = null;
     }
 
     /**
@@ -58,6 +63,7 @@ public class Resp {
         this.message = ErrorCode.SUCCESS.getReasonPhrase();
         this.httpStatus = ErrorCode.SUCCESS.getHttpStatus();
         this.data = data;
+        this.text = null;
     }
 
     public Resp(String message,Object data){
@@ -65,6 +71,7 @@ public class Resp {
         this.httpStatus = ErrorCode.SUCCESS.getHttpStatus();
         this.message = message;
         this.data = data;
+        this.text = null;
     }
 
 }
