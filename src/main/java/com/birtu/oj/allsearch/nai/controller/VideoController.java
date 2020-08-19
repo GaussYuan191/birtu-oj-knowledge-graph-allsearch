@@ -46,25 +46,35 @@ public class VideoController {
         try {
             String taskId = fileTransAli.submitFileTrans(file);
             result = fileTransAli.getFileTransResult(taskId);
+            System.out.println(result);
 
         } catch (Exception e) {
             e.printStackTrace();
+
         }
-//        System.out.println(result);
-        //去toString方法中产生的括号
-        String b = result.substring(0,result.length() -1);
-        String c = b.substring(1,b.length());
+        if(!result.equals("[]")){
+            //        System.out.println(result);
+            //去toString方法中产生的括号
+            String b = result.substring(0,result.length() -1);
+            String c = b.substring(1,b.length());
 //        System.out.println(b + "b__");
-        JSONObject jsonObject = JSONObject.fromObject(c);
-        String text = jsonObject.getString("text");
-        //text 为语音识别的内容
-        System.out.println(text);
+            JSONObject jsonObject = JSONObject.fromObject(c);
+            String text = jsonObject.getString("text");
+            //text 为语音识别的内容
+            System.out.println(text);
 
-        Resp res = qaService.qustion(text);
-        res.setText(text);
-        System.out.println(res.toString());
+            Resp res = qaService.qustion(text);
+            res.setText(text);
+            System.out.println(res.toString());
+            return res;
+        }
+        else{
+
+            return new Resp("没听清你在说什么");
+        }
 
 
-        return res;
+
+
     }
 }
